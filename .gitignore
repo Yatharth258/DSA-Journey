@@ -1,0 +1,22 @@
+# Compiled C++ files
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.so
+*.dll
+
+# IDE configuration
+.vscode/
+.idea/
+
+# Build directories
+build/
+debug/
+
+# System files
+.DS_Store
+Thumbs.db
+
+tempCodeRunnerFile.*
