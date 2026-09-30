@@ -18,12 +18,12 @@ int main(){
         }else{
             n2=n2%n1;
         }
-        if(n1 == 0){
+    }
+            if(n1 == 0){
             gcd = n2;
         }else{
             gcd = n1;
         }
-    }
     
 
     cout<<"The greatest common divisor of these two numbers are :"<<gcd;
