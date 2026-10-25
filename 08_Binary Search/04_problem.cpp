@@ -12,7 +12,7 @@ int main()
 
     vector<int> arr(n);
 
-    cout << "Enter the elements in sorted order: ";
+    cout << "Enter the elements in rotated sorted order: ";
     for(int i = 0; i < n; i++)
     {
         cin >> arr[i];
