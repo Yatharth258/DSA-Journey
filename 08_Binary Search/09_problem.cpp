@@ -57,3 +57,19 @@ int main(){
     
     return 0;
 }
+
+/*
+    Time Complexity: O(log x * log n)
+
+    Binary Search: O(log n)
+    Power calculation: O(log x)
+
+    Space Complexity: O(1)
+
+    Example:
+    n = 3, m = 27
+
+    3^3 = 27
+
+    Answer = 3
+*/
