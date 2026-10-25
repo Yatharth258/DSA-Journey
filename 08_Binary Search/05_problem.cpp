@@ -1,5 +1,10 @@
 //search for minimum in rotated sorted array
 
+//PROBLEM WITH SAME SOLUTION
+//There is a problem which states that find out how many times the array has beem rotated 
+//Solution: in order to find that if we just take care of index of lowest elemnt , that will result in our required answer
+//like jitni baar array rotate hoga uti index se lowest elemnt aage ajyaga , so we have to return that index
+
 #include <bits/stdc++.h>
 using namespace std;
 
