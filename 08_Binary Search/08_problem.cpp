@@ -15,7 +15,8 @@ int main()
 
     while(low <= high)
     {
-        int mid = low + (high - low) / 2;
+        long long mid = low + (high - low) / 2; //BUG FIX: yha int use karne pe overflow ho sakta h while calculating val
+        //becuase long long val = mid * mid; is expression mei phele int me mid*mid calculate karte h fir uski value ko val mei dalte h 
 
         // Use long long to avoid overflow
         long long val = mid * mid;

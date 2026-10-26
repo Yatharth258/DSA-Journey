@@ -7,7 +7,7 @@ using namespace std;
 
 
 // Calculate mid^x
-long long power(int mid, int n)
+long long power(long long mid, int n , int limit)
 {
     long long ans = 1;
 
@@ -17,11 +17,13 @@ long long power(int mid, int n)
         {
             ans = ans * mid;
             n = n - 1;
+            if(ans > limit) return (long long)limit + 1; ;
         }
         else
         {
             mid = mid * mid;
             n = n / 2;
+            if(mid > limit) return (long long)limit + 1; ;
         }
     }
 
@@ -41,8 +43,8 @@ int main(){
     int high = n;
 
     while(low<=high){
-        int mid = low + (high - low) / 2;
-        long long ans=power(mid,x);
+        long long mid = low + (high - low) / 2;
+        long long ans=power(mid, x , n);
 
         if(ans==n){
            cout<<"The nth root of the number is : "<<mid;
