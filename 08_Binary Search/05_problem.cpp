@@ -40,10 +40,10 @@ int main()
 
         if(arr[mid]>=arr[low]){ //left half is sorted 
            ans = min(ans,arr[low]);
-           high = mid-1;
-        }else{ //right half is sorted
-           ans = min(ans,arr[mid]);
            low = mid+1;
+        }else{ //right half is sorted
+            ans = min(ans,arr[mid]);
+            high = mid-1;
         }
     }
 

@@ -1,5 +1,5 @@
 //find the square root of a number using binary search
-//in case of any number whoch is not perfect square we are returning the ceil value of its sqrt
+//in case of any number whoch is not perfect square we are returning the floor value of its sqrt
 
 #include <bits/stdc++.h>
 using namespace std;
