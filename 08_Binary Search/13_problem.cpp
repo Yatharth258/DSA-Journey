@@ -60,7 +60,7 @@ int main()
     }
 
     // Answer = k + number of elements before the answer
-    cout << "K-th missing number: " << k + high + 1;
+    cout << "K-th missing number: " << k + high + 1;//or we can also return low+k
 
     /*
     Time Complexity:
