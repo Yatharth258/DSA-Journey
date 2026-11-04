@@ -69,3 +69,47 @@ H = height of the tree (recursion stack).
 Balanced Tree: O(log N)
 Worst Case (Skewed Tree): O(N)
 */
+
+
+
+
+//iterative approach 
+
+int maxDepth(Node* root) {
+
+    if(root == NULL)
+        return 0;
+
+    queue<Node*> q;
+    q.push(root);
+
+    int depth = 0;
+
+    while(!q.empty()) {
+
+        int size = q.size();
+        depth++;
+
+        for(int i = 0; i < size; i++) {
+
+            Node* node = q.front();
+            q.pop();
+
+            if(node->left != NULL)
+                q.push(node->left);
+
+            if(node->right != NULL)
+                q.push(node->right);
+        }
+    }
+
+    return depth;
+}
+
+/*
+Time Complexity: O(N)
+Every node is visited exactly once.
+
+Space Complexity: O(N)
+Queue can store O(N) nodes in the worst case.
+*/
